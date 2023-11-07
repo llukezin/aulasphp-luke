@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionais</title>
-
+<style>
+    .repor { color: red;}
+    .urgente {color: purple;}
+    .normal {color: green;}
+</style>
     
 </head>
 <body>
