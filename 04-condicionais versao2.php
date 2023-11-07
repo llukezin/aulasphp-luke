@@ -20,7 +20,9 @@
 $numero = 100;
 
 if($numero > 20){
-    echo "<p>$numero é maior que 20.</p>";
+?>
+    <p><?=$numero?> é maior que 20.</p>
+<?php    
 }
 ?>
 
@@ -39,27 +41,26 @@ $qtdCritica = 2; // mínimo necessário
 <h3>Produto: <?=$produto?></h3>
 <h4>Estoque: <?=$qtdEmEstoque?></h4>
 
+<?php  
+if($qtdEmEstoque < $qtdCritica){ ?>
+
+    <p class="repor">É necessário comprar/repor!</p>
+
+<?php if($qtdEmEstoque === 0){ ?>
+
+    <p class="urgente">URGENTE</p>
+
+<?php }
+
+    } else {
+
+?>   
+
+    <p class="normal">Estoque normal</p>
+
 <?php
-  /* Se a quantidade em estoque for abaixo da quantidade critica, então o sistema deve avisar e pedir para repor. */ 
-
-if($qtdEmEstoque < $qtdCritica){
-    echo "<p class='repor'>É necessário comprar/repor!</p>";
-
-    // Condicional SIMPLES/ANINHADA
-    if($qtdEmEstoque === 0){
-        echo "<p class='urgente'>URGENTE</p>";
-    }
-
-} else {
-    /* Caso contrario, simplesmente 
-    mostrar que o estoque está normal */
-
-    echo "<p class='normal'>Estoque normal</p>";
 }
-?>
-<!-- --------------------------------------- -->
 
-<?=
 $a = 5;
 $b = "5";
 
