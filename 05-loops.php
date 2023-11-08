@@ -13,7 +13,9 @@
     </style>
 </head>
 <body>
-<p><?=ESCOLA?> - <?=$anoLetivo?> </p
+    <!-- Usando o foreach para acessar os dados so array criado em outro arquivo (acessivel devido ao include) -->
+<?php foreach($linguagens $linguagem){ ?>[
+    <p><i><?=$linguagem?></i></p>
 <h1> Loops </h1>
 <hr>
 <h2>Tradicionais: for, while, do/while</h2>
