@@ -22,6 +22,9 @@ $descricao = $_POST["descricao"]
 <p><?=$produto?></p>
 <p><?$fabricante?></p>
 <p><?$preco?></p>
+<p><?=number_format($preco, 2, ",", ".")?></p>
 <p><?$descricao?></p>
+
+
 </body>
 </html>
